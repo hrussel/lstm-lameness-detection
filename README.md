@@ -2,7 +2,10 @@
 
 This repository provides the code and data for the paper:
 
-Russello, H., van der Tol, R., van Henten, E. J., & Kootstra, G. (2025). **Lameness detection in dairy cows using pose estimation and bidirectional LSTMs.** [arXiv preprint arXiv:2508.10643.](https://arxiv.org/abs/2508.10643)
+Russello, Helena, Rik van der Tol, Eldert J. van Henten, and Gert Kootstra.
+**"Lameness detection in dairy cows using pose estimation and bidirectional LSTMs."** 
+Smart Agricultural Technology (2026): 101831.
+[https://doi.org/10.1016/j.atech.2026.101831](https://doi.org/10.1016/j.atech.2026.101831)
 
 
 ## Dataset
@@ -66,21 +69,28 @@ Make sure the venv is activated before running the python script.
 python main.py
 ```
 
+
+---
+
 ## Citing
 
 If you're using the code or data for your work, please consider citing the relevant papers associtated with this repo:
 
-Code:
+This repo:
 ```text
-@article{russello2025lameness,
+@article{russello2026lameness,
   title={Lameness detection in dairy cows using pose estimation and bidirectional LSTMs},
   author={Russello, Helena and van der Tol, Rik and van Henten, Eldert J and Kootstra, Gert},
-  journal={arXiv preprint arXiv:2508.10643},
-  year={2025}
+  journal={Smart Agricultural Technology},
+  pages={101831},
+  year={2026},
+  publisher={Elsevier}
 }
 ```
 
-Keypoint trajectories:
+Keypoint trajectories (T-LEAP):
+
+[https://github.com/hrussel/t-leap](https://github.com/hrussel/t-leap)
 
 ```text
 @article{russello2022t,
@@ -95,6 +105,8 @@ Keypoint trajectories:
 ```
 
 Lameness scores:
+
+[https://github.com/hrussel/lameness-detection](https://github.com/hrussel/lameness-detection)
 
 ```text
 @article{russello2024video,
