@@ -1,0 +1,9 @@
+name: lstm-lameness-env
+channels:
+  - defaults
+dependencies:
+  - pytorch
+  - torchvision
+  - pytorch-cuda
+  - pandas
+  - scikit-learn

@@ -1,0 +1,39 @@
+### DATA
+gait_scores_csv: "data/videos_lameness_scores.csv"
+keypoints_path: "data/videos_keypoints"
+
+wandb: No  # set to 'No' if you don't intend on using Weights and Biases (wandb.ai)
+sweep: No
+
+flat_cv: Yes
+n_folds: 5
+merging: "1-2345"
+
+use_kp:
+  - 'Hoof'
+  - 'Nose'
+  - 'Head'
+  - 'Spine'
+
+### MODEL
+load_model: No
+save_path: "./saves"
+model_name: LSTM
+model_params:
+  num_hidden: 128
+  num_layers: 2
+  dropout: 0.4
+  bidirectional: Yes
+
+### TRAINING
+seed: 12345
+lr: 5e-4
+optimizer: AdamW-AMS
+batch_size: 8
+epochs: 1
+seq_length: 90
+#step_size: 75
+step_size: 50
+gradient_clipping: 0.5
+weight_decay: 1e-4
+jitter_percentage: 0.01

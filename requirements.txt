@@ -1,0 +1,5 @@
+pandas==2.3.3
+PyYAML==6.0.3
+scikit-learn==1.7.2
+torch==2.9.0+cu126
+torchvision==0.24.0+cu126
